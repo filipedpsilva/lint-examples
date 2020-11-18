@@ -1,17 +1,18 @@
 {
-  "name": "app_js",
+  "name": "ts",
   "version": "1.0.0",
-  "description": "lint examples - eslint",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "lint-fix": "eslint . --ext .ts --fix"
   },
   "author": "FS",
   "license": "ISC",
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.8.1",
+    "@typescript-eslint/parser": "^4.8.1",
     "eslint": "^7.13.0",
-    "eslint-config-standard": "^16.0.1",
-    "eslint-plugin-custom-rules": "file:../eslint",
+    "eslint-config-standard": "^16.0.2",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.2.1"

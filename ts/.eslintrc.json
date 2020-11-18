@@ -1,24 +1,40 @@
 {
+    "root": true,
     "env": {
         "browser": true,
         "es2021": true
     },
     "extends": [
-        "standard"
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:@typescript-eslint/eslint-recommended"
     ],
+    "parser": "@typescript-eslint/parser",
     "parserOptions": {
         "ecmaVersion": 12,
         "sourceType": "module"
     },
     "plugins": [
-        // This one is used for customized rules
-        "custom-rules"
+        "@typescript-eslint"
     ],
     "rules": {
         // Check https://eslint.org/docs/rules/ for more info on each one
         "capitalized-comments": "warn",
         "camelcase": "warn",
         "no-console": "warn",
+        "eqeqeq": "error",
+        "id-length": [
+            "error",
+            {
+                "min": 3,
+                "max": 10
+                //"exceptions": ["constructor"]
+            }
+        ],
+        "linebreak-style": [
+            "error",
+            "windows"
+        ],
         "no-multi-spaces": [
             "error"
         ],
@@ -52,13 +68,11 @@
         ],
         "max-lines-per-function": [
             "error",
-            20
+            10
         ],
         "init-declarations": [
             "error",
             "always"
-        ],
-        // customized rule
-        "custom-rules/no-template-literals": 1
+        ]
     }
 }
