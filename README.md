@@ -74,3 +74,4 @@ npm i
 > - [Husky](https://github.com/typicode/husky);
 > - [Commitizen](https://github.com/commitizen/cz-cli);
 > - [Prettier](https://prettier.io/docs/en/integrating-with-linters.html);
+> - [Airbnb Code Style Standards](https://github.com/airbnb/javascript);
